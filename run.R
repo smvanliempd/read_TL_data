@@ -1,4 +1,4 @@
 # run
 
 source("get_tl_data.R")
-d <- get.tl.data()
+d_tl_tidy <- get.tl.data()
