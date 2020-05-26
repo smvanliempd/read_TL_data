@@ -13,7 +13,7 @@ get.tl.data    <- function( ) {
   dat <- sapply( raw.files, function(fn) { 
     
     # get raw text file
-    ql.data.raw <- read.csv(paste0(getwd(),"/raw_TL_data/",fn), sep = "\t", header = FALSE, stringsAsFactors = F)
+    ql.data.raw <- read.csv(paste0(getwd(),"/TL_data_raw/",fn), sep = "\t", header = FALSE, stringsAsFactors = F)
     
     # Extract metabolite names, metabolite number
     target.string <-  "Compound\\s[0-9]{1,}:\\s{1,}"
